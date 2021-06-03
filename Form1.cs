@@ -29,7 +29,27 @@ namespace Formulario
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //capturar respostas
+            string nomeUsuario;
+            DateTime dataNascimento;
+            string cidade;
+            bool generoM;
+            bool generoF;
+            int numeroCadastro;
 
+            nomeUsuario = textBox1.Text;
+            dataNascimento = dateTimePicker1.Value;
+            cidade = comboBox1.Text;
+            generoM = radioButton1.Checked;
+            generoF = radioButton2.Checked;
+            numeroCadastro = Convert.ToInt32(textBox2.Text);
+
+            MessageBox.Show("Nome: "+ nomeUsuario);
+            MessageBox.Show("Nascimento: " + dataNascimento);
+            MessageBox.Show("Cidade: " + cidade);
+            MessageBox.Show("Sexo Masculino: " + generoM);
+            MessageBox.Show("Sexo Feminino: " + generoF);
+            MessageBox.Show("Número de Cadastro: " + numeroCadastro);
         }
     }
 }
