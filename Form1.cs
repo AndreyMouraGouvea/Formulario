@@ -47,9 +47,21 @@ namespace Formulario
             MessageBox.Show("Nome: "+ nomeUsuario);
             MessageBox.Show("Nascimento: " + dataNascimento);
             MessageBox.Show("Cidade: " + cidade);
-            MessageBox.Show("Sexo Masculino: " + generoM);
-            MessageBox.Show("Sexo Feminino: " + generoF);
+            if (generoM == true)
+            {
+                MessageBox.Show("Sexo Masculino: " + generoM);
+
+            }
+            else
+            {
+                MessageBox.Show("Sexo Feminino: " + generoF);
+            }
             MessageBox.Show("Número de Cadastro: " + numeroCadastro);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
